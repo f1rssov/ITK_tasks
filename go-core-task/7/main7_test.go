@@ -41,11 +41,11 @@ func TestMergeChannels(t *testing.T) {
 			}
 		}
 		if !found {
-			t.Errorf("Expected element %d not found in result %v", e, result)
+			t.Errorf("Ожидался элемент %d, но он не найден в результате %v", e, result)
 		}
 	}
 
 	if len(result) != len(expected) {
-		t.Errorf("Expected length %d, got %d", len(expected), len(result))
+		t.Errorf("Ожидалась длина %d, но получена %d", len(expected), len(result))
 	}
 }
